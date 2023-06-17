@@ -20,7 +20,7 @@ while True:
  hrs = int (now.strftime("%H"))
  min = int (now.strftime("%M"))
  sec = int (now.strftime("%S"))
- # print(min)
+
  hours = ""
  minutes = ""
  seconds = ""
