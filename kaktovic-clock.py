@@ -19,6 +19,7 @@ while True:
   if e.type == pygame.QUIT:
    pygame.quit()
    sys.exit()
+
  now = datetime.now() 
  hrs = int (now.strftime("%H"))
  min = int (now.strftime("%M"))
