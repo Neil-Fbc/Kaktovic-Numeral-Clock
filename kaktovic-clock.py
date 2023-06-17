@@ -225,4 +225,3 @@ while True:
  srf.blit(f.render(seconds,True,(255,255,255)),(200,20))
  time.sleep(0.30)
  
-   
