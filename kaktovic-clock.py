@@ -8,24 +8,17 @@ import sys
 
 pygame.init()
 
-
-# screen = pygame.display.set_mode((800, 500))
-
-
 zero = "";one = "";two = "";three = "";four = "";five = "";six = ""
 seven = "";eight = ""   ;nine = "";ten = "";eleven = "";twelve = ""
 thirteen = "";fourteen = "";fifteen = "";sixteen = "";seventeen = ""
 eightteen = "";nineteen = ""
 f = pygame.font.Font("InupiaqNumbers.ttf",64)
-print(six);print("");
-time.sleep(10)
+
 while True:
  for e in pygame.event.get():
   if e.type == pygame.QUIT:
    pygame.quit()
    sys.exit()
- 
-
  now = datetime.now() 
  hrs = int (now.strftime("%H"))
  min = int (now.strftime("%M"))
