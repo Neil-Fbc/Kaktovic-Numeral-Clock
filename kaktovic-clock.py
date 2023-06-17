@@ -1,17 +1,13 @@
-#!/usr/bin/env python3
-
 import time
 from datetime import datetime
-
 import pygame
 import sys
-
-pygame.init()
 
 zero = "";one = "";two = "";three = "";four = "";five = "";six = ""
 seven = "";eight = ""   ;nine = "";ten = "";eleven = "";twelve = ""
 thirteen = "";fourteen = "";fifteen = "";sixteen = "";seventeen = ""
 eightteen = "";nineteen = ""
+pygame.init()
 f = pygame.font.Font("InupiaqNumbers.ttf",64)
 
 while True:
@@ -29,9 +25,7 @@ while True:
  minutes = ""
  seconds = ""
  s = ""
- # hrs = 23
- # min = 58
- # sec = 39
+
  if (hrs == 0): hours = zero
  if (hrs == 1): hours = one
  if (hrs == 2): hours = two
@@ -68,7 +62,6 @@ while True:
  if (min == 6): minutes = six
  if (min == 7): minutes = seven
  if (min == 8): minutes = eight
-
  
  if (min == 9): minutes = nine
  if (min == 10): minutes = ten
@@ -99,7 +92,6 @@ while True:
  if (mn == 1 and (s[1:2]) == "7"): minutes = one + seven 
  if (mn == 1 and (s[1:2]) == "8"): minutes = one + eight
  if (mn == 1 and (s[1:2]) == "9"): minutes = one + nine
- 
   
  if (mn == 2 and (s[1:2]) == "0"): minutes = one + ten
  if (mn == 2 and (s[1:2]) == "1"): minutes = one + eleven
@@ -112,7 +104,6 @@ while True:
  if (mn == 2 and (s[1:2]) == "8"): minutes = one + eightteen
  if (mn == 2 and (s[1:2]) == "9"): minutes = one + nineteen
  
- 
  if (mn == 3 and (s[1:2]) == "0"): minutes = two + zero
  if (mn == 3 and (s[1:2]) == "1"): minutes = two + one
  if (mn == 3 and (s[1:2]) == "2"): minutes = two + two
@@ -123,7 +114,6 @@ while True:
  if (mn == 3 and (s[1:2]) == "7"): minutes = two + seven
  if (mn == 3 and (s[1:2]) == "8"): minutes = two + eight
  if (mn == 3 and (s[1:2]) == "9"): minutes = two + nine
- 
   
  if (mn == 4 and (s[1:2]) == "0"): minutes = two + ten
  if (mn == 4 and (s[1:2]) == "1"): minutes = two + eleven
@@ -177,7 +167,6 @@ while True:
  if (sc == 1 and (s[1:2]) == "7"): seconds = one + seven 
  if (sc == 1 and (s[1:2]) == "8"): seconds = one + eight
  if (sc == 1 and (s[1:2]) == "9"): seconds = one + nine
- 
   
  if (sc == 2 and (s[1:2]) == "0"): seconds = one + ten
  if (sc == 2 and (s[1:2]) == "1"): seconds = one + eleven
@@ -190,7 +179,6 @@ while True:
  if (sc == 2 and (s[1:2]) == "8"): seconds = one + eightteen
  if (sc == 2 and (s[1:2]) == "9"): seconds = one + nineteen
  
- 
  if (sc == 3 and (s[1:2]) == "0"): seconds = two + zero
  if (sc == 3 and (s[1:2]) == "1"): seconds = two + one
  if (sc == 3 and (s[1:2]) == "2"): seconds = two + two
@@ -201,8 +189,7 @@ while True:
  if (sc == 3 and (s[1:2]) == "7"): seconds = two + seven
  if (sc == 3 and (s[1:2]) == "8"): seconds = two + eight
  if (sc == 3 and (s[1:2]) == "9"): seconds = two + nine
- 
-  
+   
  if (sc == 4 and (s[1:2]) == "0"): seconds = two + ten
  if (sc == 4 and (s[1:2]) == "1"): seconds = two + eleven
  if (sc == 4 and (s[1:2]) == "2"): seconds = two + twelve
@@ -213,7 +200,6 @@ while True:
  if (sc == 4 and (s[1:2]) == "7"): seconds = two + seventeen
  if (sc == 4 and (s[1:2]) == "8"): seconds = two + eightteen
  if (sc == 4 and (s[1:2]) == "9"): seconds = two + nineteen
-  
  
  srf = pygame.display.set_mode((300,100))
  srf.blit(f.render(hours,True,(255,0,0)),(20,20))
@@ -223,6 +209,4 @@ while True:
  pygame.display.flip()
  srf.blit(f.render(hours,True,(255,255,255)),(20,20))
  srf.blit(f.render(minutes,True,(255,255,255)),(110,20))
- srf.blit(f.render(seconds,True,(255,255,255)),(200,20))
- time.sleep(0.30)
- 
+ srf.blit(f.render(seconds,True,(255,255,255)),(200,20)) 
